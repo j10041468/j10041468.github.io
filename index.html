@@ -128,8 +128,71 @@
             </button>
             <input type="submit" value="제출" />
         </form>
-    </body>
+        <section><!--같은 주제를 가지고 있는 내용의 모임-->
+            <h1>구획1 제목</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="링크주소"></a></li>
+                <li><a href="링크주소"></a></li>
+            </ul>
+            <a href="링크주소">링크버튼</a>
+        </nav>
+        <article><!--연관성이 다소 적은 내용의 모임-->
+            <h1>기사제목</h1>
+            기사내용
+        </article>
+        <aside><!--연관성이 아ㅖ 없는 내용의 모임-->
+            <h1>광고제목</h1>    
+                광고내용
+        </aside>
 
+        <header></header><!--본문(body)내용의 서론)-->
+        <footer></footer><!--본문(body)내용의 결론-->
+
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            //get element by id
+            //id 기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle ="#ff0000"
+
+            ctx.fillStyle(25,25,100,100);//채움 사각형
+            ctx.clearRect(45,45,60,60); //사각 형태로 지우기
+            ctx.strokeRect(50,50,50,50); //윤곽 사각형
+
+            ctx.fillStyle = "#000000";
+            ctx.beginPath();//선그리기 시작
+            ctx.moveTo(65,75);// 펜 들어 움직이기
+            ctx.lineTo(90,95);// 선 그으며 움직이기
+            ctx.fill();//내부 채우기
+
+            ctx.beginPath();
+            ctx.arc(225,75,50,0,Math.PI * 2, true);//Outer Circle
+            ctx.moveTo(260,75);
+            ctx.arc(225,75,35,0,Math.PI, false);//Mouth(colckwise)
+            ctx.moveTo(215,65);
+            ctx.arc(210.65,5,0, Math.PI * 2, true);//Left eye
+            ctx.moveTo(245,65);
+            ctx.arc(240,65,5,0,Math.PI * 2, true);//Right eye
+            ctx.strock();
+            </script>
+
+    <audio controls="">
+        <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg">
+    </audio>
+    <video controls="">
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YeB5DOwCI3I?si=laUlLgy51mN26rW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+
+    </body>https://www.youtube.com/watch?v=pFUAWtHJXCw
+    https://youtu.be/YeB5DOwCI3I?t=1
+
+    
 </html>
 
 

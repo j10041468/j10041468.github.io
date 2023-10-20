@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUBWAY WEBSITE</title>
+        <meta charset="utf-8" />
+        <style>
+            .h6_size{
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.subway.co.kr/"><img src="https://blog.kakaocdn.net/dn/oRfXF/btqwUD0pkG9/oKW7last16X2QkJjhBvy30/img.jpg" alt="subway img" width="400" height="auto" /></a>
+            <h1>SUBWAY : 써브웨이</h1>
+        </header>
+
+        <hr/>
+
+        <style>
+            .nav{ font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            nav :hover {color: #009743;}
+        </style>
+        <nav>
+            <a href="#user" class="nav">회원</a>
+            <a href="#share" class="nav">나의 추천조합 공유</a>
+            <a href="#subway_share" class="nav">Subway 추천조합</a>
+            <a href="#color" class="nav">Subway Color</a>
+            <a href="#event" class="nav">Now Event!</a>
+            <a href="#Menu" class="nav">메뉴 종류</a>
+            <a href="#ingredient" class="nav">재료 종류</a>
+            <a href="#what" class="nav">써브웨이에 대하여</a>
+            <a href="#way" class="nav">샌드위치가 만들어지는 과정</a>
+            <a href="#news" class="nav">써브웨이 뉴스</a>
+        </nav>
+
+        <hr/>
+        
+        <h2 id="user">회원</h2>
+        <form>
+            <label>회원 로그인</label>
+            <input type="text" placeholder="아이디 입력" />
+            <input type="password" placeholder="비밀번호 입력" />
+            <button>로그인</button>
+        </form>
+        <style>
+            table, th, td {border : solid 1px black;}
+            #long_td{
+                width: 200px;
+                text-align: center;
+            }
+            #ID{
+                text-align: center;
+            }
+        </style>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">회원 정보</th>
+                </tr>
+                <tr>
+                    <th>사진</th>
+                    <th>이름</th>
+                    <th id="long_td">아이디</th>
+                    <th>주 사용 위치</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/6175/6175591.png" alt="your img" width="100" height="auto" /></td>
+                    <td>김ㅇㅇ</td>
+                    <td id="ID">rladd123</td>
+                    <td id="ID">서울 중구</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr/>
+        <style>
+            label{
+                display: block;
+                margin-top: 20px; 
+            }
+        </style>
+        <form>
+            <h2 id="share">나만의 추천 조합 공유하기</h2>
+
+            <label>주로 어느 지역 써브웨이를 이용하시나요?</label>
+            <select name="best subway">
+                <option value="DDP">동대문역사문화공원점</option>
+                <option value="Singdang">신당점</option>
+                <option value="SnagWangsimni">상왕십리점</option>
+                <option value="Euljiro 4-ga">을지로4가점</option>
+                <option value="noun" selected>선택해주세요.</option>
+            </select> <br/>
+
+            <label>어떤 종류를 추천하시나요?</label>
+            <input type="radio" name="종류" value="Sandwich" />샌드위치
+            <input type="radio" name="종류" value="Salad" />샐러드
+            <input type="radio" name="종류" value="Minilab" />미니랩 <br/>
+
+            <label>추천 메뉴를 골라주세요</label>
+            <input type="checkbox" name="메뉴" value="에그마요" />에그마요
+            <input type="checkbox" name="메뉴" value="참치" />참치
+            <input type="checkbox" name="메뉴" value="BMT" />BMT
+            <input type="checkbox" name="메뉴" value="BLT" />BLT
+            <input type="checkbox" name="메뉴" value="쉬림프" />쉬림프
+            <input type="checkbox" name="메뉴" value="머쉬룸" />머쉬룸 <br/>
+
+            <label>추천 조합을 적어주세요!</label> <br/>
+            <textarea name="추천 조합" id="" cols="30" rows="10" placeholder="빵 종류, 치즈 종류, 야채 종류, 소스 종류, 세트 여부 등..."></textarea>
+
+            <input type="submit" name="제출" value="제출"/>
+        </form>
+        
+        <hr/>
+
+        <h2 id="subway_share">많은 사람들이 사랑하는 SUBWAY 추천 조합</h2>
+        <table summary="써브웨이 추천 조합, 각 샌드위치 메뉴에 맞춘 조합을 추천하는 글, 추천 조합">
+            <caption>추천조합</caption>
+            <tr>
+                <th>메뉴</th>
+                <th>빵</th>
+                <th>추가사항</th>
+                <th>치즈</th>
+                <th colspan="2">소스</th>
+            </tr>
+            <tr>
+                <td>B.M.T</td>
+                <td>파마산 오레가노</td>
+                <td rowspan="2">에그마요</td>
+                <td>모짜렐라</td>
+                <td rowspan="3">랜치</td>
+                <td>스위트 어니언</td>
+            </tr>
+            <tr>
+                <td>쉬림프</td>
+                <td>플랫브래드</td>
+                <td>슈레드</td>
+                <td rowspan="2">스위트 칠리</td>
+            </tr>
+            <tr>
+                <td>에그마요</td>
+                <td>파마산오레가노</td>
+                <td>베이컨</td>
+                <td>자유</td>
+            </tr>
+            <tr>
+                <td>머쉬룸</td>
+                <td>위트</td>
+                <td>자유</td>
+                <td>아메리칸</td>
+                <td>올리브오일</td>
+                <td>소금&후추</td>
+            </tr>
+        </table>
+        
+        <hr/>
+
+        <h2 id="color">Subway Color</h2>
+        <canvas id="color1"></canvas>
+        <script>
+            var canvas_obj = document.getElementById("color1");
+            var ctx = canvas_obj.getContext("2d");
+            ctx.fillStyle="#FFCB0A"; 
+            ctx.fillRect(25,25,100,100) 
+        </script>
+        <canvas id="color2"></canvas>
+        <script>
+            var canvas_obj = document.getElementById("color2");
+            var ctx = canvas_obj.getContext("2d");
+            ctx.fillStyle="#009743"; 
+            ctx.fillRect(25,25,100,100) 
+        </script>
+        <p class="h6_size">#FFCB04 / #009743</p>
+
+        <hr/>
+
+        <h2 id="event">Now Event!</h2>
+            <div>
+                <h3>버섯이 왔썹!</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QLJQexbK1KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>머쉬룸 썹 15cm 5,600원 / 머쉬룸 샐러드 7,300원 / 머쉬룸 썹 30cm 10,300원</p>
+                <p class="h6_size">머쉬룸은 기간 한정으로 판매되는 제품으로 조기 소진 시 판매가 종료될 수 있으며, 매장별 판매 종료 시점은 상이할 수 있습니다.</p>
+            </div>
+            <div>
+                <h3>로티세리 바비큐 치킨 콤보</h3>
+                <img src="https://www.subway.co.kr/upload/event/event_770x400_20220830014745783.jpg" alt="로티세리 바비큐 치킨 콤보 img" />
+                <p>로티세리 바비큐 치킨 15cm + 음료 16oz <del>8,600원</del> > <strong>7,600원</strong> </p>
+                <p class="h6_size">본 프로모션은 <em>9월 1일부터 10월 31일까지 진행</em>됩니다. 16oz 음료는 리필이 불가하며, 음료 변경을 원하실 경우 생수로 변경 가능합니다. 중복 할인이 되지 않으며 행사에 참여하지 않은 매장이 있으니 직접 참고 부탁드립니다. </p>
+            </div>
+
+        <hr/>
+
+        <h2 id="Menu">메뉴 종류</h2>
+        <ul>
+            <li>치킨 슬라이스</li>
+            <li>치킨 베이컨 아보카도</li>
+            <li>머쉬룸</li>
+            <li>쉬림프</li>
+            <li>로티세리 바비큐 치킨</li>
+            <li>이탈리안 비엠티</li>
+            <li>로스트 치킨</li>
+            <li>에그마요</li>
+            <li>K-바비큐</li>
+            <li>폴드 포크 바비큐</li>
+            <li>비엘티</li>
+            <li>햄</li>
+            <li>참치</li>
+            <li>써브웨이 클럽</li>
+            <li>베지</li>
+            <li>스테이크&치즈</li>
+            <li>스파이시 이탈리안</li>
+            <li>치킨 데리야끼</li>
+            <li><del>터키</del><sup>일시품절</sup></li>
+            <li><del>터키 베이컨 아보카도</del><sub>일시품절</sub></li>
+        </ul>
+        
+        <hr/>
+
+        <div>
+        <h2 id="ingredient">재료 종류</h2>
+        <a href="#bread">빵 종류</a>
+        <a href="#vege">야채 종류</a>   
+        <a href="#souce">소스 종류</a>
+        <a href="#add">추가 사이드 종류</a>
+            <section>
+                <h3 id="bread">빵 종류</h3>
+                <ul>
+                    <img src="https://t1.daumcdn.net/cfile/tistory/99F8F03A5F32767707" alt="Subway bread img" width="400" height="auto" />
+                    <li>
+                        <dl>
+                            <dt>화이트</dt>
+                            <dd>가장 클래식한 빵으로 부드러운 식감이 매력인 밀빵</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>하티 이탈리안</dt>
+                            <dd>부드러운 화이트 빵에 옥수수 가루를 묻혀 겉은 바삭하고 고소하며 속은 부드러운 밀빵</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>파마산 오레가노</dt>
+                            <dd>부드러운 화이트 빵에 파마산 치즈와 오레가노를 토핑한 허브향 가득한 밀빵</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>위트</dt>
+                            <dd>9가지 곡물빵</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>허니오트</dt>
+                            <dd>고소한 위트빵에 귀리를 토핑한 빵</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>플랫브레드</dt>
+                            <dd>쫄깃하고 고소한 납작한 빵</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="vege">야채 종류</h3>
+                <ul>
+                    <li>양상추</li>
+                    <li>토마토</li>
+                    <li>양파</li>
+                    <li>피망</li>
+                    <li>오이</li>
+                    <li>올리브</li>
+                    <li>할라피뇨</li>
+                    <li>피클</li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="souce">소스 종류</h3>
+                <ul>
+                    <img src="https://t1.daumcdn.net/cfile/tistory/99B03C3B5D57AD5D0C" alt="Subway souce img" width="400" height="auto"/>
+                    <li>랜치</li>
+                    <li>마요네즈</li>
+                    <li>스위트 어니언</li>
+                    <li>허니머스타드</li>
+                    <li>스위트칠리</li>
+                    <li>바비큐</li>
+                    <li>핫칠리</li>
+                    <li>사우스웨스트</li>
+                    <li>머스타드</li>
+                    <li>홀스래디쉬</li>
+                    <li>사우전 아일랜드</li>
+                    <li>이탈리안 드레싱</li>
+                    <li>레드와인식초</li>
+                    <li>올리브오일</li>
+                    <li>소금</li>
+                    <li>후추</li>
+                    <li>스모크 바비큐</li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="add">추가 사이드 종류</h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>더블업</dt>
+                            <dd>선택한 메뉴의 고기를 두 배로 즐기세요!</dd>
+                        </dl>
+                    </li>
+                    <li>에그마요</li>
+                    <li>오믈렛</li>
+                    <li>아보카도</li>
+                    <li>베이컨</li>
+                    <li>페퍼로니</li>
+                    <li>더블치즈</li>
+                    <p class="h6_size">※선택하신 메뉴보다 낮은 가격의 모든 메뉴 속 고기들은 추가하실 수 있습니다.</p>
+                </ul>
+            </section>
+        </div>
+
+        <hr/>
+        
+        <div>
+            <h2 id="what">써브웨이에 대하여</h2>
+            <a href="#history">써브웨이 역사</a>
+            <a href="#namestory">써브웨이 이름 뜻</a>
+            <a href="#store">써브웨이 매장 수</a>
+            <a href="#promise">써브웨이 약속</a>
+
+            <h3 id="histroy">써브웨이 역사</h3>
+                <h4>써브웨이 외국 역사</h4>
+                    <h5>외국 역사 년도별로 알아보기</h5>
+                        <h6>1965</h6>
+                        <p class="h6_size">17세 사업가, 프레드 델루카 'Pete's Super Submarines' 오픈</p>
+                        <h6>1968</h6>
+                        <p class="h6_size">공식 명칭 '써브웨이' 사용 시작</p>
+                        <h6>1975</h6>
+                        <p class="h6_size">클래식 BMT 출시</p>
+                        <h6>1983</h6>
+                        <p class="h6_size">매장에서 직접 구워낸 신선한 빵 제공 시작</p>
+                        <h6>1984</h6>
+                        <p class="h6_size">단체 고객을 위한 파티플래터 상품 출시</p>
+                        <h6>1981-1987</h6>
+                        <p class="h6_size">프랜차이즈를 통한 글로벌 사업 확장</p>
+                        <h6>1988</h6>
+                        <p class="h6_size">엔터프리지 선정 500대 프랜차이즈 기업 1위</p>
+                        <h6>1992</h6>
+                        <p class="h6_size">편의 시설 주변에 오픈을 통해 대중적인 브랜드로 거듭나다</p>
+                        <h6>1997</h6>
+                        <p class="h6_size">저지방 샌드위치 메뉴 출시</p>
+                        <h6>2000</h6>
+                        <p class="h6_size">메뉴의 다양화! 빵과 소스 선택 가능</p>
+                        <h6>2005</h6>
+                        <p class="h6_size">토스트 샌드위치의 시작</p>
+                        <h6>2013</h6>
+                        <p class="h6_size">빵의 인공 첨가물 제거</p>
+                        <h6>2017</h6>
+                        <p class="h6_size">'Fresh Forward'를 통한 새로운 변화</p>
+                <h4>써브웨이 한국 역사</h4>
+                    <h5>한국 역사 년도별로 알아보기</h5>
+                        <h6>1991</h6>
+                        <p class="h6_size">써브웨이 한국 1호점 개점 (63빌딩 아케이드)</p>
+                        <h6>2005</h6>
+                        <p class="h6_size">한국 지사 설립</p>
+                        <h6>2012</h6>
+                        <p class="h6_size">50개 매장 달성</p>
+                        <h6>2013</h6>
+                        <p class="h6_size">페이스북, PPL 등을 통한 활발한 마케팅 활동 시작</p>
+                        <h6>2014</h6>
+                        <p class="h6_size">100개 매장 달성</p>
+                        <h6>2017</h6>
+                        <p class="h6_size">300개 매장 달성</p>
+                        <h6>2017</h6>
+                        <p class="h6_size">아시아 최초 'Fresh Forward' 매장 국내 오픈</p>
+                        <h6>2018</h6>
+                        <p class="h6_size">웹사이트 리뉴얼 오픈</p>
+                        <h6>2020</h6>
+                        <p class="h6_size">써브웨이 앱 출시, 국내 첫 Drive Through 매장 오픈</p>
+            <h3 id="namestory">써브웨이 이름 뜻</h3>
+            <p>
+                잠수함의 submarines의 SUB 와 방식이란 뜻의 WAY 를 합쳐 만들어졌다. <br/>
+                기존에 쓰던 'Pete's Super Submarines'는 당시 라디오 광고를 하였을 때 피자집으로 착각해 오는 손님들이 많았기에 이름을 바꾸었다고 한다. <br/>
+                <ins>추가로 SUBWAY 로고 속 화살표는 빠르고 신선한 샌드위치의 상징으로 속도를 나타낸다.</ins>
+            </p>
+            <h3 id="store">써브웨이 매장 수</h3>
+                <h4>전세계 써브웨이 매장 수</h4>
+                <p class="h6_size">111개국에 44,644개</p>
+                <h4>전국 써브웨이 매장 수</h4>
+                <p class="h6_size">2022년 10월 14일 기준</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">지역</th>
+                            <th scope="col">수(단위:개)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>서울특별시</td>
+                            <td>167</td>
+                        </tr>
+                        <tr>
+                            <td>경기도</td>
+                            <td>125</td>
+                        </tr>
+                        <tr>
+                            <td>인천광역시</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>대전광역시</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>세종특별자치시</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>충청남도</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>경상남도</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>울산광역시</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>부산광역시</td>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td>제주특별자치도</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>전라북도</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>충청북도</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>광주광역시</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>전라남도</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>경상북도</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td scope="row">총합</td>
+                            <td>517</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            <h3 id="promise">써브웨이 약속</h3>
+            <ol>
+                <li>
+                    <h4>엄격하게 관리되는 우리의 재료</h4>
+                    <p>매일 매장에 배송되는 신선한 야채들은 각 매장에서 정성스럽게 손질됩니다. 엄격한 규율에 따라 세척 과정을 거친 야채들은 당일 판매되는 양만큼 준비되며 언제나 신선한 최상의 야채를 안전하게 제공하는 것이 써브웨이의 목표입니다.</p>
+                </li>
+                <li>
+                    <h4>써브웨이만의 특별한 빵</h4>
+                    <p>1983년부터 써브웨이는 각 매장에서 매일 직접 구워 낸 신선한 샌드위치 빵을 제공합니다. 신선한 샌드위치는 신선한 빵에서 시작된다는 철학으로 매일 최상의 샌드위치 빵을 제공하기 위해 노력하고 있습니다.</p>
+                </li>
+                <li>
+                    <h4>환경을 위한 우리의 노력</h4>
+                    <p>써브웨이의 샐러드 보울은 95% 재생 용기로 만들어졌으며, 매장 내 일회용품 사용을 줄여 나가고 있습니다. 써브웨이는 작은 부분이라도 놓치지 않고 환경을 늘 생각하는 브랜드가 되기 위해 지속적으로 노력하고 있습니다.</p>
+                </li>
+                <li>
+                    <h4>신선함을 위한 우리의 노력</h4>
+                    <p>써브웨이 빵은 인위적 당분이 함유되어 있지 안흐며 비타민과 칼슘을 강화하고 나트륨을 줄이는 등 건강한 먹거리를 제공하기 위해 노력하고 있습니다.</p>
+                </li>
+            </ol>
+        </div>
+
+        <hr/>
+        
+        <h2 id="way">샌드위치가 만들어지는 과정</h2>
+        <ol>
+            <li>메뉴판에서 메뉴를 고릅니다.</li>
+            <li>샌드위치의 길이와 빵 종류를 고릅니다.</li>
+            <li>샌드위치 속 들어갈 치즈를 고릅니다.</li>
+            <li>최대한 샌드위치를 오븐에 굽기 전 추가하고자 하는 추가 사이드를 고릅니다.</li>
+            <li>빵을 오븐에 굽습니다.</li>
+            <li>야채 종류 중 빼고 싶은 것을 점원에게 말합니다.</li>
+            <li>샌드위치 속 들어갈 소스를 고릅니다.</li>
+        </ol>
+
+        <hr/>
+
+        <div>
+        <h2 id="news">써브웨이 뉴스</h2>
+        <article>
+            <h3>'써브웨이 샐러드' 돌아왔지만... 양배추 대란, 아직 '진행형'</h3>
+            <blockquote cite="https://www.etoday.co.kr/news/view/2075028">
+                    때 이른 한파로 양상추 가격이 폭등하면서 일부 외식 프랜차이즈 기업들의 양상추 공급 불안이 이어지는 가운데 서브웨이가 샐러드 메뉴 판매를 정상화한다고 밝혔다. 롯데리아, 버거킹 등 타 브랜드 역시 양배추와 섞어서 제공하거나 대체품을 지급하는 등 공급불안 해소에 힘을 쏟고 있지만 아직은 공급난 해소가 쉽지 않은 상황이다. <br/>
+                    글로벌 샌드위치 브랜드 써브웨이는 양상추 수급 불안정으로 일부 판매 차질을 겪어온 샐러드 메뉴 판매를 정상화한다고 4일 밝혔다. 이날부터 써브웨이 전국 매장에서 19종에 달하는 모든 샐러드 메뉴의 판매가 전면 정상화된다. 써브웨이는 그동안 샐러드 메뉴의 신속한 판매 정상화를 위해 양상추 물량을 확보하는 등 다각적인 노력을 보였다.
+            </blockquote>
+        </article>
+        <article>
+            <h3>7일 단 하루! 써브웨이와 함께 하는 '들썹들썹'한 금요일!</h3>
+            <blockquote cite="https://mnb.moneys.co.kr/mnbview.php?no=2022100609303340802&ref=https%3A%2F%2Fsearch.naver.com">
+                    샌드위치 전문점 창업 가맹 프랜차이즈 브랜드 써브웨이 관계자는 "500호점 돌파 기념으로 진행되는 이번 이벤트는 오프라인 매장 단독 행사로 진행되며, 써브웨이 앱과 배달을 통한 주문은 제외이나, 써브웨이 앱 멤버십 포인트 적립 및 사용이 가능하다"라며 "구매 수량은 1인당 최대 5개로 제한한다"고 전했다. <br/>
+                    이벤트를 통해 7일 하루 동안 전국 써브웨이 매장에서 미니랩을 제외한 모든 샌드위치, 샐러드, 랩 메뉴를 500원 할인된 가격에 구매할 수 있다.
+            </blockquote>
+        </article>
+        </div>
+
+        <hr/>
+
+        <aside>
+            <img src="https://img2.sbs.co.kr/img/sbs_cms/WE/2022/09/13/oDl1663052908066.jpg" alt="천원짜리 변호사 img" width="400" />
+            <p>SBS 금토드라마 천원짜리 변호사, 오후 10:00시 본방사수</p>
+        </aside>
+
+        <hr/>
+
+        <p> + 고등학생때도 html과 css를 배웠었는데 그 때는 이렇게 나만의 웹 문서를 작성해본다기 보단 수업시간에 배웠던 내용을 제출만 하고, 지필고사로 태그들만 공부했었기 때문에 재미도 그다지 없었고 외웠던 태그들도 기억이 많이 안 나고 그랬었는데 이번 써브웨이 웹 문서를 제작하는 과정이 재밌었고 태그들도 더 기억에 잘 남아있는 것 같습니다. 본래 디지털미디어디자인과를 선택할 때 프로그래밍을 해보고 싶어서 들어왔는데, 디지털미디어디자인과에서 하는 건 웹퍼블리셔지 아에 코드 개발부분은 아니라는 소리를 주변에서 들어서 진짜 개발자가 하나의 웹사이트를 만들 때 어떻게 하는지 궁금해졌습니다. 제가 기억하기론 css가 들어오면서 html만 했을 때 보다 더 헷갈렸던 것 같아서 기말평가가 조금 걱정되긴 합니다. 하지만 고등학생때 헷갈렸던 id태그와 class태그는 이제 헷갈리지 않게 되어 기쁩니다! 앞으로 더 열심히 하겠습니다 :)</p>
+
+        <hr/>
+        
+        <footer>
+            <p class="h6_size">SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+            <p class="h6_size">계원예술대학교 디지털미디어디자인과 A반 22261130 황민지</p>
+        </footer>
+    </body>
+</html>
