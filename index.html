@@ -178,6 +178,7 @@
             ctx.arc(240,65,5,0,Math.PI * 2, true);//Right eye
             ctx.strock();
             </script>
+            
 
     <audio controls="">
         <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg">
@@ -189,6 +190,25 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YeB5DOwCI3I?si=laUlLgy51mN26rW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 
 
+    <style type="text/css">
+        #myCanvas{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    <canvas id="myCanvas"></canvas>
+    
+    <script>
+      var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+      var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+      ctx.fillStyle = "	#00FFFF"; //색을 지정합니다.
+      
+      ctx.fillRect(25, 25, 100, 100); //채움 사각형
+      
+  
+      
+   
+    </script>
     </body>https://www.youtube.com/watch?v=pFUAWtHJXCw
     https://youtu.be/YeB5DOwCI3I?t=1
 

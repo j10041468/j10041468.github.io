@@ -41,5 +41,22 @@
     <th>부산</th>
 </tr>
 </table>
+<style type="text/css">
+    #myCanvas{
+        height: 300px;
+        width: 300px;
+    }
+</style>
+<canvas id="myCanvas"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+  var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+  ctx.fillStyle = "#6A5ACD"; //색을 지정합니다.
+  
+  ctx.fillRect(50, 50, 100, 100); //채움 사각형
+  
+</script>
+
 </body>
 </html>
